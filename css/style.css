@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-weight: 500;
+  font-family: 'Catamaran', sans-serif;
+}
+#menu-outer {
+	height: 84px;
+}
+.logo {
+  padding: 35px;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul#horizontal-list li {
+    display: inline;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-size: 0.825rem;
+    font-weight: thin;
+	}
+
+section {
+  width: 100%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 100vh;
+}
+
+.intro {
+  height: 65vh;
+}
+#about {
+  height: 65vh;
+  padding: 6rem;
+  color: rgb(121, 121, 121);
+}
+.about-text {
+  color: #000;
+  padding: 30px 14rem;
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+  justify-content: center;
+
+}
+.intro-text {
+  font-weight: 900;
+  text-align: center;
+  clear: both;
+  margin-bottom: 25%;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 3em;
+  display: block;
+  color: white;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 2;
+}
+
+a {
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
+.gradient {
+  background: #f46b45;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(#E96156, #D98B53 );  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(#E96156, #D98B53 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.searchbox-container {
+  margin:0px auto;
+  margin-top: -6rem;
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 70%;
+  text-align: center;
+  clear: both;
+}
+
+.searchbox {
+  padding: 0px 30px;
+  border-radius: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(79, 80, 82);
+  height: 65px;
+  width: 45%;
+  border: 3px solid #f46b45;
+}
+.hero-text {
+  padding:0 27%;
+}
+.centered-text {
+  text-align: center;
+}
+.white-text {
+  color: #ffffff !important;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.button {
+  float: right;
+  height: 1rem;
+  margin-right:2rem !important;
+  margin: auto;
+  background-color: #aba7a7;
+  padding: 0.9rem 0.8rem !important;
+  color: #ffffff;
+  border-radius: 2rem;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 23px;
+  margin-left: 0.8rem;
+  left: 16px;
+}
+.bottom-left-info {
+  position: absolute;
+  margin-left: 0.8rem;
+  bottom: 7px;
+  color: #f46b45;
+  left: 16px;
+}
+
+.row {
+  position: relative !important;
+}
+ /* Create four equal columns that floats next to each other */
+ .column {
+  float: left;
+  width: 31%;
+  margin: 0px 1% !important;
+  padding: 1px;
+  margin-top: 12px !important;
+}
+
+.column img {
+  margin-top: 12px !important;
+  width: 100%;
+  height: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  margin: 0px auto;
+  display: flex;
+  clear: both;
+}
+
+@media (max-width: 1024px) {
+  .column {
+      width: 30%;
+  }
+  .about-text {
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .row {
+    position: relative !important;
+  }
+  .column {
+      width: 70%;
+      margin: 0px 15% !important;
+  }
+  .about-text {
+    padding: 25px;
+    font-size: 0.9rem;
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 23px;
+    margin-left: 0.8rem;
+    left: 16px;
+  }
+  .bottom-left-info {
+    position: absolute;
+    margin-left: 0.8rem;
+    bottom: 7px;
+    color: #f46b45;
+    left: 16px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    position: relative !important;
+  }
+  .column {
+      width: 100%;
+ }
+ .about-text {
+  padding: 25px 5px;
+  font-size: 0.9rem;
+}
+.table {
+  visibility: hidden;
+}
+.hero-text {
+  padding:0 5%;
+}
+}
+
+.dy {
+  margin-top: -4.5rem;
+  margin-left: 3rem !important;
+}
